@@ -78,10 +78,11 @@ const FundRiserForm = () => {
                 <input type="date" placeholder="Type here" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={deadline} onChange={(e)=>setDeadline(e.target.value)} required/>
             </div>
 
-            <button className="p-2 w-full bg-[#F56D91] text-white rounded-md hover:bg-[#d15677]" disabled={btnLoading} >{btnLoading?"Loading...":"Rise fund"}</button>
+            <button className="p-2 w-full bg-[#F56D91] text-white rounded-md hover:bg-[#d15677]" disabled={btnLoading} style={{backgroundColor:"#f93f85"}}>{btnLoading?"Loading...":"Rise fund"}</button>
         </form>
     </>
   )
 }
 
 export default FundRiserForm
+

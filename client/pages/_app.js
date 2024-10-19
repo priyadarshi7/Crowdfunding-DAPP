@@ -39,10 +39,10 @@ function MyApp({ Component, pageProps }) {
   
   
   return (
-    <>
+    <div style={{backgroundColor:"black",height:"100%"}}>
       <ToastContainer/>
       <Component {...pageProps} />
-    </>
+    </div>
   )
 }
 

@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   return (
     <div className="px-2 py-4 flex flex-col lg:px-12 lg:flex-row ">
-      <div className="lg:w-7/12 my-2 lg:my-0 lg:mx-2">
+      <div className="lg:w-7/12 my-2 lg:my-0 lg:mx-2 yo" style={{backgroundColor:"white"}} >
         {projectsList !== undefined?
           projectsList.length > 0 ?
             projectsList.map((data, i) => (

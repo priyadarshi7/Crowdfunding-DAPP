@@ -4,7 +4,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" style={{backgroundColor:"black",height:"100%"}}>
         <Head>
           <meta name="description" content="crowd funding dapp" />
           <link rel="icon" href="/favicon.ico" />
@@ -18,7 +18,7 @@ class MyDocument extends Document {
 
           <meta property="og:site_name" content="crowd funding dapp" />
         </Head>
-        <body>
+        <body style={{backgroundColor:"black",height:"100%"}}>
           <Main />
           <script src="https://kit.fontawesome.com/e6ef8c1f6f.js" crossorigin="anonymous"></script>
           <NextScript />

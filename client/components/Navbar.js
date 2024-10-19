@@ -10,9 +10,9 @@ const Navbar = () => {
     const account = useSelector(state=>state.web3Reducer.account)
 
   return (
-    <div>
+    <div style={{backgroundColor:"black"}}>
         {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
-        <nav className="bg-[#F7F5F2]">
+        <nav className="bg-[#F7F5F2]"style={{backgroundColor:"black"}}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -22,14 +22,14 @@ const Navbar = () => {
                 <i className="fa-solid fa-bars"></i>
                 </button>
             </div>
-            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start" style={{backgroundColor:"black"}}>
                 <div className="flex-shrink-0 flex items-center">
-                      <h4 className='font-mono text-xl text-greay font-bold hidden lg:block'>CROWD FUNDING</h4>
+                      <h4 className='font-mono text-xl text-greay font-bold hidden lg:block' style={{color:"white"}}>CROWD FUNDING</h4>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
-                    <Link href="/dashboard"  ><span className={`${router.pathname === "/dashboard"?"bg-[#F7C984]":""} text-greay px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#F7C984] hover:text-greay`}>Dashboard</span></Link>
-                    <Link href="/my-contributions"><span className={`${router.pathname === "/my-contributions"?"bg-[#F7C984]":""} text-greay px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#F7C984] hover:text-greay`}>My contribution</span></Link>
+                    <Link href="/dashboard"  ><span className={`${router.pathname === "/dashboard"?"bg-[#F7C984]":""} text-greay px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#F7C984] hover:text-greay`} style={{backgroundColor:"#f93f85"}}>Dashboard</span></Link>
+                    <Link href="/my-contributions"><span className={`${router.pathname === "/my-contributions"?"bg-[#F7C984]":""} text-greay px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#F7C984] hover:text-greay`}style={{color:"white"}}>My contribution</span></Link>
                 </div>
                 </div>
             </div>
@@ -41,9 +41,9 @@ const Navbar = () => {
                 {/* <!-- Profile  --> */}
                 <div className="ml-3 relative">
                 <div>
-                    <button type="button" className="bg-[#F7C984] flex text-sm rounded-md focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <button type="button" style={{backgroundColor:"#f93f85"}} className="bg-[#F7C984] flex text-sm rounded-md focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span className="sr-only">Open user menu</span>
-                    <div className="h-8 w-8 rounded-full" ></div>
+                    <div className="h-8 w-8 rounded-full" style={{backgroundColor:"#f93f85",color:"#f93f85"}}></div>
                     </button>
                 </div>
                 </div>
